@@ -18,8 +18,8 @@ try:
     expected_search_field_rect = {'height': 40, 'width': 205, 'x': 480.921875, 'y': 15}
     expected_cart_rect = {'height': 40, 'width': 50, 'x': 912, 'y': 15}
 
-    # actual_browse_library_color = browse_library.value_of_css_property('color')
-    # expected_browse_library_color = "rgb(69, 74, 85)"
+    actual_browse_library_color = driver.find_element(By.XPATH, '//*[@id="packt-navbar"]/div[1]').value_of_css_property('color')
+    expected_browse_library_color = "rgba(109, 115, 125, 1)"
     actual_browse_library_txt = driver.find_element(By.XPATH, '//*[@id="packt-navbar"]/div[1]').text
     expected_browse_libray_txt= "Browse Library"
 
@@ -28,6 +28,7 @@ try:
     assert search_field == expected_search_field_rect, "Search field  mismatch"
     assert cart == expected_cart_rect, "Cart mismatch"
     assert actual_browse_library_txt == expected_browse_libray_txt, "Browse libray text mismatch"
+    assert actual_browse_library_color == expected_browse_library_color, "Browse libray color mismatch"
     print("All assertions passed Successfully. Elements match expected values!")
 except NoSuchElementException as e:
     print(f"Element not found: {e.msg}")
