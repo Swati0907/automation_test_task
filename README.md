@@ -1,5 +1,5 @@
 # Reasoning for your choice of automation software and reporting : 
-** Automation software saves time and it more efficient**
+** Automation software saves time and it is more efficient**
 # Any installation instructions for your software and framework :
 We need to install python too like "**Pycharm**
 We need to install **Python**
