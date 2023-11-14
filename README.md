@@ -1,8 +1,8 @@
 # Reasoning for your choice of automation software and reporting : 
 ** Automation software saves time and it is more efficient**
 # Any installation instructions for your software and framework :
-We need to install python too like "**Pycharm**
-We need to install **Python**
+We need to install python tool like "**Pycharm**
+We need to install **Python 3.9** or above
 We need to install **Selenium**
 Import the Selenium webDriver
 # Instructions and commands to run your code 
